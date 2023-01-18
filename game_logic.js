@@ -188,4 +188,4 @@ let findSide = (element) => {return (element.id.endsWith("f")) ? OFF_PRECIPICE_A
 let changeFunctionality = (element, doRemove) => {(doRemove) ? removedListeners.push(element) : removedListeners.splice(removedListeners.indexOf(element), 1)};
 let changeVis = (element, haveHidden) => {element.style.visibility = (haveHidden) ? "hidden" : "visible";};
 let checkRevolt = () => {return (COUNT_ARR[2] !== 0 && COUNT_ARR[3] > COUNT_ARR[2] || COUNT_ARR[0] !== 0 && COUNT_ARR[1] > COUNT_ARR[0])};
-let checkWin = () => {return (COUNT_ARR[0] + COUNT_ARR[1] === 6)};
+let checkWin = () => {return (COUNT_ARR[2] + COUNT_ARR[3] === 0)};
